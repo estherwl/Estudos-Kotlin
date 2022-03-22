@@ -1,10 +1,10 @@
-package alura.orientacaoObjetos
+package com.alura.oop
 
 //construtor pode ter valores padrão, ex: class Conta(val titular: String="esther", val numero: Int)
 //ou seja, ao criar o objeto se não declarar outro valor, terá o valor padrão
-class Conta(val titular: String, val numero: Int){
+abstract class Conta(val titular: String, val numero: Int){
     var saldo = 0.0
-        private set
+        protected set
     //saldo só pode ser modificado através da classe, já que set é privado
 
     fun deposita(conta: Conta, valor: Double){
@@ -12,13 +12,7 @@ class Conta(val titular: String, val numero: Int){
     }
 
     @Throws(Exception::class)
-    fun saca(valor: Double){
-        if(saldo < valor) {
-            throw Exception("Saldo insuficiente")
-        }
-        saldo -= valor
-        println("Saldo atualizado: $saldo")
-    }
+    abstract fun saca(valor: Double)
 
     fun transfere(destino: Conta, valor: Double){
         saca(valor)

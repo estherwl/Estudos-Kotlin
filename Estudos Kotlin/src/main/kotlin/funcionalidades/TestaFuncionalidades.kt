@@ -4,6 +4,7 @@ fun main(args: Array<String>) {
     testaArray()
     testaHighOrderFunction()
 }
+
 fun testaIncremento(){
     var num = 2
     println(num++)
