@@ -23,6 +23,6 @@ fun testaFuncionario() {
     println("total de bonificação: ${calculadora.total}")
 
     val sistema = SistemaInterno()
-    sistema.entra(gerente, 1000)
+    sistema.entra(gerente, 1111)
     sistema.entra(diretor, 5678)
 }
