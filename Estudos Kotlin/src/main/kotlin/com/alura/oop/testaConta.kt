@@ -1,12 +1,14 @@
 package com.alura.oop
 
-fun main() {
-    val contaFabi = ContaCorrente("Fabi", 11222)
-    val contaJoao = ContaCorrente("João", 11223)
+fun testaComportamentoConta() {
+    //labels (identificação titular e numero abaixo, por exemplo, ajudam na visualização do código
+    //e permitem que parametros sejam colocados em ordem diferente da apresentda no construtor
+    val contaEsther = ContaCorrente(titular = "Esther Lucena", numero = 11222)
+    val contaPaulo = ContaPoupanca(numero = 11223, titular = "Paulo Nunes")
 
-    contaFabi.deposita(contaFabi, 500.00)
-    contaFabi.transfere(contaJoao, 100.00)
+    contaEsther.deposita(contaEsther, 200.00)
+    contaEsther.saca(100.00)
+    contaEsther.transfere(contaPaulo, 100.00)
 
-    contaFabi.saca(200.00)
-    contaJoao.saca(10.00)
+    println("Saldo contaPaulo: ${contaPaulo.saldo}")
 }
