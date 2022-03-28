@@ -1,9 +1,9 @@
 package com.alura.oop
 
-class ContaPoupanca(
+class ContaSalario(
     titular: String,
     numero: Int
-) : ContaFazTransferencia(
+) : Conta(
     titular = titular,
     numero = numero
 ) {

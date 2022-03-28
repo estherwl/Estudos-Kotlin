@@ -13,11 +13,4 @@ abstract class Conta(val titular: String, val numero: Int){
 
     @Throws(Exception::class)
     abstract fun saca(valor: Double)
-
-    fun transfere(destino: Conta, valor: Double){
-        saca(valor)
-        deposita(destino, valor)
-    }
-
-
 }

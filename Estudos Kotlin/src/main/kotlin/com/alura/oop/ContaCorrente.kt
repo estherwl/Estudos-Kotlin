@@ -3,7 +3,7 @@ package com.alura.oop
 class ContaCorrente(
     titular: String,
     numero: Int
-) : Conta(
+) : ContaFazTransferencia(
     titular = titular,
     numero = numero
 ) {
