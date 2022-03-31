@@ -1,4 +1,4 @@
-package com.alura.oop
+package estudos.alura.modelo
 
 //abstract não precisa colocar open (já é por default)
 //open: hábil de ser herdada
@@ -13,7 +13,7 @@ abstract class FuncionarioAdmin(
     cpf: String,
     salario: Double,
     protected val senha: Int
-): Funcionario(nome = nome, cpf = cpf, salario = salario), Autenticavel {
+): estudos.alura.modelo.Funcionario(nome = nome, cpf = cpf, salario = salario), estudos.alura.modelo.Autenticavel {
      override fun autentica(senha: Int): Boolean{
         if(this.senha == senha){
             return true

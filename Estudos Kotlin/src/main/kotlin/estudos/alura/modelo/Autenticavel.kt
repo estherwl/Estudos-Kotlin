@@ -1,4 +1,4 @@
-package com.alura.oop
+package estudos.alura.modelo
 
 //Não mantêm estados (valores)
 //Não são instanciadas (são implicitamente abstracts)

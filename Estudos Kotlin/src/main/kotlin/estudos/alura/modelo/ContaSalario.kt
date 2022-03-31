@@ -1,9 +1,9 @@
-package com.alura.oop
+package estudos.alura.modelo
 
 class ContaSalario(
     titular: String,
     numero: Int
-) : Conta(
+) : estudos.alura.modelo.Conta(
     titular = titular,
     numero = numero
 ) {

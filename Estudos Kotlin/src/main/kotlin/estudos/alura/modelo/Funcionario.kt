@@ -1,4 +1,4 @@
-package com.alura.oop
+package estudos.alura.modelo
 
 //abstract não precisa colocar open (já é por default)
 //open: abil de ser herdada (Open to share properties with anyone)

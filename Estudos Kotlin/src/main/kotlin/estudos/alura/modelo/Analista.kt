@@ -1,4 +1,4 @@
-package com.alura.oop
+package estudos.alura.modelo
 
 //analista tem comportamento de Funcionário, enquanto outros cargos
 //possuem comportamento de FuncionarioAdmin, por isso as duas classes
@@ -9,7 +9,7 @@ class Analista(
     nome: String,
     cpf: String,
     salario: Double
-) : Funcionario(
+) : estudos.alura.modelo.Funcionario(
     nome = nome,
     cpf = cpf,
     salario = salario

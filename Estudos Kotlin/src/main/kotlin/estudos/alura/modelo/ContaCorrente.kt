@@ -1,9 +1,9 @@
-package com.alura.oop
+package estudos.alura.modelo
 
 class ContaCorrente(
     titular: String,
     numero: Int
-) : ContaFazTransferencia(
+) : estudos.alura.modelo.ContaFazTransferencia(
     titular = titular,
     numero = numero
 ) {

@@ -1,4 +1,4 @@
-package com.alura.oop
+package estudos.alura.modelo
 
 class Diretor(
     nome: String,
@@ -6,7 +6,7 @@ class Diretor(
     salario: Double,
     senha: Int,
     val plr: Double
-) : FuncionarioAdmin(
+) : estudos.alura.modelo.FuncionarioAdmin(
     nome = nome,
     cpf = cpf,
     salario = salario,
