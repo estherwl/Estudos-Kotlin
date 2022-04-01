@@ -1,7 +1,7 @@
 package estudos.alura.modelo
 
 class ContaPoupanca(
-    titular: String,
+    titular: Cliente,
     numero: Int
 ) : estudos.alura.modelo.ContaFazTransferencia(
     titular = titular,

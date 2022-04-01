@@ -1,7 +1,7 @@
 package estudos.alura.modelo
 
 class ContaSalario(
-    titular: String,
+    titular: Cliente,
     numero: Int
 ) : estudos.alura.modelo.Conta(
     titular = titular,

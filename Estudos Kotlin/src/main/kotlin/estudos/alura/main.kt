@@ -1,4 +1,4 @@
-package com.alura.modelo
+package estudos.alura
 
 import estudos.alura.teste.testaComportamentoConta
 import estudos.alura.teste.testaFuncionario
