@@ -1,6 +1,8 @@
 package estudos.alura.teste
 
 import estudos.alura.modelo.Cliente
+import estudos.alura.modelo.Conta
+import kotlin.reflect.jvm.internal.impl.utils.SmartSet.Companion
 
 fun testaComportamentoConta() {
     val Paulo = Cliente("Paulo", 2)
@@ -18,4 +20,5 @@ fun testaComportamentoConta() {
     contaEsther.transfere(contaPaulo, 100.00)
 
     println("Saldo contaPaulo: ${contaPaulo.saldo}")
+    println("Total de contas: ${Conta.Contador.total}")
 }
