@@ -2,14 +2,14 @@ package estudos.alura.teste
 
 import estudos.alura.modelo.Cliente
 import estudos.alura.modelo.Conta
-import kotlin.reflect.jvm.internal.impl.utils.SmartSet.Companion
+import estudos.alura.modelo.ContaCorrente
 
 fun testaComportamentoConta() {
     val Paulo = Cliente("Paulo", 2)
 
     //labels (identificação titular e numero abaixo), por exemplo, ajudam na visualização do código
     //e permitem que parametros sejam colocados em ordem diferente da apresentda no construtor
-    val contaEsther = estudos.alura.modelo.ContaCorrente(titular = Cliente(
+    val contaEsther = ContaCorrente(titular = Cliente(
         "Esther",
         1) ,
         numero = 11222)

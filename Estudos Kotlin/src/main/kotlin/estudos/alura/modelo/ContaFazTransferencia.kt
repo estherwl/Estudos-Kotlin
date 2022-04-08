@@ -1,15 +1,22 @@
 package estudos.alura.modelo
 
+import estudos.alura.exception.SaldoInsuficienteException
+
 abstract class ContaFazTransferencia(
     titular: Cliente,
     numero: Int,
 
-    ) : estudos.alura.modelo.Conta(
+    ) : Conta(
     titular = titular,
     numero = numero
 ) {
 
-    fun transfere(destino: estudos.alura.modelo.ContaFazTransferencia, valor: Double) {
+    fun transfere(destino: ContaFazTransferencia, valor: Double) {
+        if(saldo < valor){
+            throw SaldoInsuficienteException(
+                mensagem = "O saldo é insuficiente"
+            )
+        }
         saca(valor)
         deposita(destino, valor)
     }

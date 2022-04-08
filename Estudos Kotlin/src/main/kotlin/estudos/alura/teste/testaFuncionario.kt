@@ -1,16 +1,19 @@
 package estudos.alura.teste
 
-import com.alura.modelo.*
+import estudos.alura.modelo.CalculadoraBonificacao
+import estudos.alura.modelo.Diretor
+import estudos.alura.modelo.Gerente
+import estudos.alura.modelo.SistemaInterno
 
 fun testaFuncionario() {
-    val gerente = estudos.alura.modelo.Gerente(
+    val gerente = Gerente(
         nome = "Fran",
         cpf = "222.222.222-22",
         salario = 2000.0,
         senha = 1234
     )
 
-    val diretor = estudos.alura.modelo.Diretor(
+    val diretor = Diretor(
         nome = "Gui",
         cpf = "333.333.333-33",
         salario = 4000.0,
@@ -18,13 +21,13 @@ fun testaFuncionario() {
         plr = 200.0
     )
 
-    val calculadora = estudos.alura.modelo.CalculadoraBonificacao()
+    val calculadora = CalculadoraBonificacao()
     calculadora.registra(gerente)
     calculadora.registra(diretor)
 
     println("total de bonificação: ${calculadora.total}")
 
-    val sistema = estudos.alura.modelo.SistemaInterno()
+    val sistema = SistemaInterno()
     sistema.entra(gerente, 1111)
     sistema.entra(diretor, 5678)
 }

@@ -3,7 +3,7 @@ package estudos.alura.modelo
 class ContaPoupanca(
     titular: Cliente,
     numero: Int
-) : estudos.alura.modelo.ContaFazTransferencia(
+) : ContaFazTransferencia(
     titular = titular,
     numero = numero
 ) {
