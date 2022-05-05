@@ -19,6 +19,11 @@ fun testaFor(){
     for (i in 1..5) {
         println(i)
     }
+
+    contacts.forEachIndexed{ i, contato ->
+        contacts[i] = contato + i;
+    }
+
     for (i in 1 until 5) {print(i)}
     for (x in 1..10 step 2) {
         print(x)
